@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="0dp"
+            android:textStyle="italic"
+            android:fontFamily="serif"
+            android:hint="Enter Your Name"
+            android:layout_height="match_parent"
+            android:id="@+id/name"
+            android:layout_weight="0.7"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab"
+            app:fabSize="normal"
+            app:elevation="12dp"
+            android:src="@android:drawable/ic_menu_search"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/result"
+        android:hint="Your Fetch Results"
+        android:textSize="26sp"
+        android:fontFamily="monospace"
+        />
+</LinearLayout>
